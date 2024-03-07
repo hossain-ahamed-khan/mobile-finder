@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!---------- tailwind and daisy ui links  -------------->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!------------- google font links  ----------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!------------- font awesome link  -------------->
+    <script src="https://kit.fontawesome.com/48d86ff5d9.js" crossorigin="anonymous"></script>
+
+    <!--------------- css style  --------------->
+    <style>
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body class="poppins-font">
+    <!------------ navbar section  ------------>
+
+    <nav class="w-full">
+        <div class="w-4/5 mx-auto flex justify-between py-12">
+            <div>
+                <h3 class="text-[#403F3F] text-2xl font-bold">Hot Gadgets</h3>
+            </div>
+            <div>
+                <button class="bg-[#0D6EFD] px-8 py-3 text-white text-xl font-bold rounded-lg">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!------------- hero section  ---------------->
+
+    <section class="w-full">
+        <div class="w-4/5 mx-auto text-center">
+            <h1 class="text-[#100F0F] text-6xl font-bold">Apple Iphone 13 Pro Max</h1>
+            <p class="w-1/2 mx-auto my-6 text-[#706F6F] text-lg font-normal">There are many variations of passages of
+                Lorem Ipsum available, but the
+                majority
+                have
+                suffered alteration
+                in some form, by injected humou.</p>
+            <button class="bg-[#0D6EFD] text-xl font-bold rounded-lg text-white px-7 py-2">Buy Now</button>
+            <div class="">
+                <img class="mx-auto my-4" src="./images/hero-image.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!------------ search phone section  ------------->
+
+    <section class="w-full">
+        <div class="w-4/5 mx-auto my-12">
+            <div class="text-center py-4">
+                <h2 class="text-[#100F0F] text-4xl font-semibold">Search your phone</h2>
+                <div class="w-1/2 mx-auto relative my-6">
+                    <input id="search-input" class="w-full mx-auto bg-[#100F0F0D] px-5 py-4 rounded-lg" type="text"
+                        placeholder="Search your phone">
+                    <button onclick="handlesearch()"
+                        class="absolute right-0 top-0 bg-[#0D6EFD] text-xl text-white font-bold  px-8 py-3.5 rounded-lg">Search</button>
+                </div>
+            </div>
+            <div id="phone-container" class="grid grid-cols-3 gap-7">
+
+            </div>
+            <div id="show-all-container" class="text-center my-12 hidden">
+                <button class="bg-[#0D6EFD] text-white text-xl font-bold rounded-lg px-9 py-4">Show All</button>
+            </div>
+        </div>
+    </section>
+
+    <!--------------- footer section  ---------------->
+
+    <footer class="w-full bg-[#0D6EFD0D]">
+        <div class="w-4/5 mx-auto py-12">
+            <div class="flex justify-between py-8">
+                <div>
+                    <h2 class="text-[#100F0F] text-4xl font-bold py-2">Hot Gadgets</h2>
+                    <p class="text-[#706F6F] text-lg font-semibold">You can definitely work.</p>
+                </div>
+                <div class="flex items-center gap-6">
+                    <div>
+                        <i class="fa-brands fa-facebook text-3xl mr-3"></i>
+                        <i class="fa-brands fa-instagram text-3xl mr-3"></i>
+                        <i class="fa-brands fa-x-twitter text-3xl"></i>
+                    </div>
+                    <button class="bg-[#0D6EFD] text-white text-xl font-bold px-5 py-2 rounded-lg">Join premium</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="flex justify-between text-[#403F3F] text-xl font-medium py-12">
+                <div class="flex flex-col gap-3">
+                    <p>Product</p>
+                    <p>Browse jobs</p>
+                    <p>Remote jobs</p>
+                    <p>Startup jobs</p>
+                    <p>Company jobs</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p>Popular</p>
+                    <p>UIUX Design</p>
+                    <p>Product Design</p>
+                    <p>Back-End Developer</p>
+                    <p>Front-End Developer</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p>Resource</p>
+                    <p>Faq</p>
+                    <p>Support</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Service</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p>Company</p>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Career Tips</p>
+                    <p>Careers</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!------------- link javaScript file  ----------->
+
+    <script src="./js/fetch-data.js"></script>
+</body>
+
+</html>
